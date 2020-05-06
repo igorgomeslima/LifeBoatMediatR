@@ -12,6 +12,7 @@ namespace LifeBoatMediatR.Application
         {
             //services.AddMediatR(typeof(Startup));
             services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddSingleton<IMediator, CustomMediator>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehaviour<,>));
