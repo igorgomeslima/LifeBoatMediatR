@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoMapper;
-using LifeBoatMediatR.Common.Mappings;
 using LifeBoatMediatR.Domain.Entities;
+using LifeBoatMediatR.Application.Common.Mappings;
 
 namespace LifeBoatMediatR.Application.Users.Queries.GetUsersList
 {
